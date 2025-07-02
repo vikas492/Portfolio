@@ -1,0 +1,43 @@
+[
+    {
+      "title": "TODO APP",
+    "imageSrc": "projects/Todo.png",
+      "description": "A simple and interactive app to add, edit, and manage daily tasks efficiently.",
+      "skills": ["React", "Javascript", "Node","HTML & CSS"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "Students attendence system",
+      "imageSrc": "projects/project.png",
+      "description": "A web-based application to manage and track student attendance efficiently in real-time.",
+      "skills": ["React", "My SQL", "HTML & CSS", "Drizzel ORM"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "Router site",
+      "imageSrc": "projects/project.png",
+      "description": "A project that demonstrates dynamic page navigation using React Router for a seamless single-page application experience.",
+      "skills": ["React", "React Router", "HTML & CSS"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "BG-Changer",
+      "imageSrc": "projects/project.png",
+      "description": "An app that allows users to change the background color or image dynamically with a click.",
+      "skills": ["React", "HTML & CSS", "Node"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "Data Structures and Algorithms",
+      "imageSrc": "projects/project.png",
+      "description": "Studied DSA using Javascript ",
+      "skills": ["Javascript"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    }
+   
+  ]
