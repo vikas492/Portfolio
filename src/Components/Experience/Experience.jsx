@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./Experience.module.css";
-
+import history from "../../Data/history.json";
 import img1 from "../../../assets/skills/html.png";
 import img2 from "../../../assets/skills/css.png";
 import img3 from "../../../assets/skills/react.png";
