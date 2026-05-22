@@ -1,4 +1,4 @@
-@import "../../vars.css";
+  @import "../../vars.css";
 
 .container {
   color: var(--color-text);
@@ -18,52 +18,93 @@
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 36px;
   margin-top: 14px;
 }
 
 .skills {
-  width: 45%;
+  width: 48%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
+  justify-content: center;
 }
 
-.skill {
+.skillsGrid {
+  width: 100%;
+  max-width: 480px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(96px, 1fr));
+  gap: 144px 18px;
+  padding: 22px 16px;
+  border-radius: 20px;
+  background: radial-gradient(circle at 50% 35%, rgba(87, 108, 188, 0.28), rgba(25, 55, 109, 0.08) 55%, rgba(25, 55, 109, 0) 100%);
+  box-shadow: inset 0 0 28px rgba(87, 108, 188, 0.18);
+}
+
+.skillNode {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 11px;
+  gap: 10px;
 }
 
-.skillImageContainer {
-  background-color: var(--color-secondary);
-  border-radius: 100%;
+.skillOrb {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
-  height: 120px;
+  transform-style: preserve-3d;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.08) 35%, rgba(9, 18, 42, 0.3) 60%, rgba(9, 18, 42, 0.9) 100%),
+    linear-gradient(140deg, rgba(87, 108, 188, 0.92), rgba(25, 55, 109, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 18px rgba(4, 21, 45, 0.45), inset 0 -8px 16px rgba(0, 0, 0, 0.24);
+  animation: spinInPlace 4.2s linear infinite;
+  transition: transform 0.25s ease;
 }
 
-.skillImageContainer img {
-  width: 75px;
+.skillNode:nth-child(2) .skillOrb,
+.skillNode:nth-child(5) .skillOrb,
+.skillNode:nth-child(8) .skillOrb {
+  animation-duration: 3.8s;
 }
 
-.skill p {
-  font-size: 25px;
+.skillNode:nth-child(3) .skillOrb,
+.skillNode:nth-child(6) .skillOrb,
+.skillNode:nth-child(9) .skillOrb {
+  animation-duration: 4.6s;
+}
+
+.skillOrb img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+}
+
+.skillNode p {
+  font-size: 14px;
   font-family: var(--font-roboto);
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.skillNode:hover .skillOrb {
+  transform: translateY(-4px) scale(1.06);
 }
 
 .history {
-  width: 45%;
+  width: 48%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
 .historyItem {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -72,6 +113,35 @@
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 10px;
   padding: 24px;
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.historyItem::before {
+  content: "";
+  position: absolute;
+  top: -160%;
+  left: -45%;
+  width: 40%;
+  height: 320%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.33) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-220%) rotate(18deg);
+  transition: transform 0.55s ease;
+  pointer-events: none;
+}
+
+.historyItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 20px rgba(1, 9, 28, 0.4);
+}
+
+.historyItem:hover::before {
+  transform: translateX(460%) rotate(18deg);
 }
 
 .historyItem img {
@@ -100,21 +170,48 @@
   margin-left: 17px;
 }
 
-@media screen and (max-width: 830px) {
+@keyframes spinInPlace {
+  0% {
+    transform: rotateY(0deg) rotateX(12deg);
+  }
+  50% {
+    transform: rotateY(180deg) rotateX(-12deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(12deg);
+  }
+}
+
+@media screen and (max-width: 980px) {
   .content {
     flex-direction: column;
     align-items: center;
     gap: 34px;
   }
 
-  .skills {
+  .skills,
+  .history {
     width: 100%;
-    flex-direction: row;
-    justify-content: center;
+  }
+
+  .skillsGrid {
+    max-width: 540px;
+    grid-template-columns: repeat(3, minmax(90px, 1fr));
   }
 
   .history {
-    width: 100%;
     gap: 9px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .skillsGrid {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skillOrb {
+    animation: none;
   }
 }

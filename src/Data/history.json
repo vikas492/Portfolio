@@ -7,14 +7,7 @@
       "experiences": ["Bechlor of Engineering ", "Electronics and Telecommunication"],
       "imageSrc": "history/microsoft.png"
     },
-    {
-      "role": "Intern",
-      "organisation": "Somaiya Vidyavihar University",
-      "startDate": "jun, 2024",
-      "endDate": "Jul 2024",
-      "experiences": ["Made my First Frontend Project", "FeedBack System using Emojis"],
-      "imageSrc": "history/google.png"
-    },
+    
     {
       "role": "Intern",
       "organisation": "Somaiya Vidyavihar University",
@@ -24,19 +17,6 @@
         "Worked on PLC programming and DBMS",
         "Made a four way traffic light system",
         "A Student Attendence System using Mysql"
-      ],
-      "imageSrc": "history/netflix.png"
-    },
-    {
-      "role": "Enhancing my skills",
-      "organisation": "youtube and more",
-      "startDate": "learning",
-      "endDate": "Learning",
-      "experiences": [
-        "Awesome Projects",
-        "Learning new things",
-        "Working with AI",
-        "keeping up growing more and more"
       ],
       "imageSrc": "history/netflix.png"
     }

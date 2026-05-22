@@ -8,7 +8,12 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
         <div className={styles.content}>
-            <h1 className={styles.title}>Hi, I am Vikas Zende</h1>
+            <h1 className={styles.title}>
+              Hi, I am{" "}
+              <span className={styles.typedName} aria-label="Vikas Zende">
+                Vikas Zende
+              </span>
+            </h1>
             <p className={styles.description}>Passionate web developer focused on building responsive, user-friendly websites.
 Constantly exploring new tools and aiming for greater heights. </p>
             <a href='mailto:vikaszende2004@gmail.com' className={styles.contactBtn}>Contact Me</a>

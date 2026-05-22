@@ -1,6 +1,7 @@
 @import "../../vars.css";
 
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -8,6 +9,35 @@
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 345px;
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: -160%;
+  left: -45%;
+  width: 40%;
+  height: 320%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.38) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-220%) rotate(18deg);
+  transition: transform 0.55s ease;
+  pointer-events: none;
+}
+
+.container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 22px rgba(4, 21, 45, 0.6);
+}
+
+.container:hover::before {
+  transform: translateX(460%) rotate(18deg);
 }
 
 .image {

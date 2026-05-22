@@ -1,43 +1,50 @@
 [
-    {
-      "title": "TODO APP",
+  {
+    "title": "Chat Application",
+    "imageSrc": "projects/chat-app.png",
+    "description": "A real-time messaging application that enables users to communicate instantly through an intuitive and responsive chat interface. The project focuses on seamless user interaction, modern UI design, and efficient message handling.",
+    "skills": ["JavaScript", "React", "Node.js", "Socket.IO"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/vikas492/Chat-App"
+  },
+  {
+    "title": "Gym Management System",
+    "imageSrc": "projects/gym.png",
+    "description": "A comprehensive gym management platform designed to manage memberships, attendance records, workout plans, and member information efficiently through a user-friendly dashboard.",
+    "skills": ["JavaScript", "React", "Node.js", "HTML", "CSS"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/vikas492/Gym-Management-System"
+  },
+  {
+    "title": "AI-Powered Utility Bill Analyzer",
+    "imageSrc": "projects/bill-analyzer.png",
+    "description": "An AI-based application that analyzes utility bills, extracts key information, identifies usage patterns, and generates meaningful insights to help users better understand and manage their expenses.",
+    "skills": ["Python", "Machine Learning", "AI", "Data Analysis"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/vikas492/AI-Powered-Utility-Bill-Analyzer"
+  },
+  {
+    "title": "Student Attendance Tracker",
+    "imageSrc": "projects/attendance.png",
+    "description": "A web-based attendance management system that allows institutions to record, monitor, and manage student attendance efficiently while providing easy access to attendance reports.",
+    "skills": ["React", "JavaScript", "HTML", "CSS"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/vikas492/Students-Attendance-Tracker"
+  },
+  {
+    "title": "Todo List App",
     "imageSrc": "projects/Todo.png",
-      "description": "A simple and interactive app to add, edit, and manage daily tasks efficiently.",
-      "skills": ["React", "Javascript", "Node","HTML & CSS"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "Students attendence system",
-      "imageSrc": "projects/project.png",
-      "description": "A web-based application to manage and track student attendance efficiently in real-time.",
-      "skills": ["React", "My SQL", "HTML & CSS", "Drizzel ORM"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "Router site",
-      "imageSrc": "projects/project.png",
-      "description": "A project that demonstrates dynamic page navigation using React Router for a seamless single-page application experience.",
-      "skills": ["React", "React Router", "HTML & CSS"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "BG-Changer",
-      "imageSrc": "projects/project.png",
-      "description": "An app that allows users to change the background color or image dynamically with a click.",
-      "skills": ["React", "HTML & CSS", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "Data Structures and Algorithms",
-      "imageSrc": "projects/project.png",
-      "description": "Studied DSA using Javascript ",
-      "skills": ["Javascript"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    }
-   
-  ]
+    "description": "A simple and interactive task management application that enables users to add, edit, delete, and organize daily tasks efficiently with a clean and responsive interface.",
+    "skills": ["React", "JavaScript", "HTML", "CSS"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/vikas492"
+  },
+  {
+    "title": "Netflix Clone",
+    "imageSrc": "projects/netflix.png",
+    "description": "A responsive Netflix-inspired streaming platform clone featuring an engaging user interface, movie listings, banners, and modern design principles to recreate the Netflix browsing experience.",
+    "skills": ["JavaScript", "React", "HTML", "CSS"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/vikas492/Netflix-Clone"
+  }
+]
