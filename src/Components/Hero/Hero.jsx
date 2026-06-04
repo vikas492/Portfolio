@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from './Hero.module.css'
-
-
-
+import heroImage from '../../../assets/hero/vikaszendenew.jpeg'
 
 export const Hero = () => {
   return (
@@ -18,7 +16,7 @@ export const Hero = () => {
 Constantly exploring new tools and aiming for greater heights. </p>
             <a href='mailto:vikaszende2004@gmail.com' className={styles.contactBtn}>Contact Me</a>
         </div>
-       <img src="/assets/hero/vikaszendenew.jpeg" alt="Hero Image" className={styles.heroImg} />
+       <img src={heroImage} alt="Hero Image" className={styles.heroImg} />
         <div className={styles.topBlur} />
         <div className={styles.bottomBlur} />
     </section>
